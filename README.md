@@ -1,6 +1,6 @@
 # frontend
 
-## Project setup
+### Project setup
 
 ```
 cd frontend
@@ -12,8 +12,14 @@ npm istall
 
 ### Compiles and hot-reloads for development
 
+### 반드시 한번은 SET DEBUG=backend:\* npm start 실행
+
 ```
-npm run serve
+SET DEBUG=backend:* npm start
+or
+node /bin/www
+or
+nodemon /bin/www
 ```
 
 ### Compiles and minifies for production

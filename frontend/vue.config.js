@@ -1,9 +1,13 @@
 const path = require("path");
 
 module.exports = {
+  // 1. npm run serve 가 아닌 백엔드의 서버를 사용하기위해 build 위치설정
   // build 파일 위치를 backend의 public에 생성
   outputDir: path.resolve(__dirname, "../backend/public"),
-  // /api로 주소가 전달되면 전부 백엔드로 넘겨준다.
+
+  // 9. /api로 주소가 전달되면 전부 백엔드로 넘겨준다.
+  // history를 사용해서 뷰라우터로만 전달되는 주소를
+  // proxy를 사용해서 백엔드 주소로 전달
   devServer: {
     proxyTable: {
       "/api": {
