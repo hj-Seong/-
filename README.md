@@ -17,9 +17,9 @@ npm istall
 ```
 SET DEBUG=backend:* npm start
 or
-node /bin/www
+node ./bin/www
 or
-nodemon /bin/www
+nodemon ./bin/www
 ```
 
 ### Compiles and minifies for production
