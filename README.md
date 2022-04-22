@@ -15,7 +15,7 @@ npm istall
 ### 반드시 한번은 SET DEBUG=backend:\* npm start 실행
 
 ```
-SET DEBUG=backend:* npm start
+SET DEBUG=backend:* & npm start
 or
 node ./bin/www
 or
